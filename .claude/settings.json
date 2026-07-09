@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(firebase apphosting:rollouts:create openplan3d-www -g fd912ab --force --project openplan3d)",
+      "Bash(gcloud --version)",
+      "Bash(gcloud auth *)",
+      "Bash(python3 -m json.tool)"
+    ]
+  }
+}
