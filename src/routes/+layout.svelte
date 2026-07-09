@@ -1,5 +1,6 @@
 <script>
 	import '../app.css';
+	import { trackOutbound } from '$lib/analytics';
 
 	let { children } = $props();
 	let mobileMenuOpen = $state(false);
@@ -20,6 +21,16 @@
 		<div class="hidden md:flex items-center gap-8">
 			<a href="/features" class="text-slate-300 hover:text-white transition-colors text-sm">Features</a>
 			<a href="/about" class="text-slate-300 hover:text-white transition-colors text-sm">About</a>
+			<a
+				href="https://3dsplatapp.com/"
+				target="_blank"
+				rel="noopener"
+				onclick={() => trackOutbound('nav_3dsplatapp', 'https://3dsplatapp.com/')}
+				class="flex items-center gap-2 text-slate-300 hover:text-white transition-colors text-sm border border-slate-700 hover:border-slate-500 px-3 py-1.5 rounded-lg"
+			>
+				<img src="/3dsplatapp-icon.png" alt="3D Splat App" class="w-5 h-5 rounded" />
+				3D Splat App
+			</a>
 			<a
 				href="https://app.openplan3d.com"
 				class="bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
@@ -45,6 +56,16 @@
 		<div class="md:hidden border-t border-slate-800 px-6 py-4 space-y-3">
 			<a href="/features" class="block text-slate-300 hover:text-white text-sm" onclick={() => mobileMenuOpen = false}>Features</a>
 			<a href="/about" class="block text-slate-300 hover:text-white text-sm" onclick={() => mobileMenuOpen = false}>About</a>
+			<a
+				href="https://3dsplatapp.com/"
+				target="_blank"
+				rel="noopener"
+				onclick={() => { trackOutbound('nav_3dsplatapp', 'https://3dsplatapp.com/'); mobileMenuOpen = false; }}
+				class="flex items-center gap-2 text-slate-300 hover:text-white text-sm"
+			>
+				<img src="/3dsplatapp-icon.png" alt="3D Splat App" class="w-5 h-5 rounded" />
+				3D Splat App
+			</a>
 			<a
 				href="https://app.openplan3d.com"
 				class="block bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg text-center transition-colors"
@@ -78,6 +99,21 @@
 				<h4 class="text-slate-300 font-medium mb-3">Open Source</h4>
 				<ul class="space-y-2">
 					<li><a href="https://github.com/theLodgeBots/open3dFloorplan" class="hover:text-white transition-colors">GitHub</a></li>
+				</ul>
+				<h4 class="text-slate-300 font-medium mb-3 mt-6">More Tools</h4>
+				<ul class="space-y-2">
+					<li>
+						<a
+							href="https://3dsplatapp.com/"
+							target="_blank"
+							rel="noopener"
+							onclick={() => trackOutbound('footer_3dsplatapp', 'https://3dsplatapp.com/')}
+							class="flex items-center gap-2 hover:text-white transition-colors"
+						>
+							<img src="/3dsplatapp-icon.png" alt="3D Splat App" class="w-5 h-5 rounded" />
+							3D Splat App — Gaussian Splatting on Mac
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>

@@ -95,6 +95,53 @@
 	</div>
 </section>
 
+<!-- Cross-promo: 3D Splat App -->
+<section class="bg-slate-800 border-y border-slate-700 py-16">
+	<div class="max-w-4xl mx-auto px-6">
+		<div class="flex flex-col sm:flex-row items-center gap-8 bg-slate-900 rounded-2xl border border-slate-700 p-8 md:p-10 shadow-2xl">
+			<img
+				src="/3dsplatapp-icon.png"
+				alt="3D Splat App icon"
+				class="w-24 h-24 md:w-28 md:h-28 rounded-2xl shadow-lg shrink-0"
+			/>
+			<div class="text-center sm:text-left">
+				<div class="inline-block bg-purple-500/10 text-purple-300 text-xs font-medium px-3 py-1 rounded-full mb-3 border border-purple-500/20">
+					From the makers of OpenPlan3D
+				</div>
+				<h2 class="text-2xl md:text-3xl font-bold text-white mb-2">3D Splat App</h2>
+				<p class="text-slate-400 leading-relaxed mb-4">
+					Turn photos and videos into photorealistic 3D scenes with Gaussian Splatting — right on your Mac.
+					Capture a real room in minutes and explore it in stunning, true-to-life 3D.
+				</p>
+				<p class="text-slate-300 font-medium mb-3">Why floor-plan designers love it:</p>
+				<ul class="text-slate-400 text-sm leading-relaxed space-y-2 mb-6 text-left">
+					<li class="flex gap-2">
+						<span class="text-purple-400 shrink-0">•</span>
+						<span><span class="text-slate-300 font-medium">Capture the real space first.</span> Scan an existing room to a lifelike 3D model, then design its floor plan in OpenPlan3D with the real dimensions and details in front of you.</span>
+					</li>
+					<li class="flex gap-2">
+						<span class="text-purple-400 shrink-0">•</span>
+						<span><span class="text-slate-300 font-medium">Show clients the "before."</span> Photorealistic splats communicate a space far better than photos — perfect for remodels, staging, and design proposals.</span>
+					</li>
+					<li class="flex gap-2">
+						<span class="text-purple-400 shrink-0">•</span>
+						<span><span class="text-slate-300 font-medium">No LiDAR required.</span> Just a few photos or a short video from any camera — the app reconstructs the full 3D scene on your Mac.</span>
+					</li>
+				</ul>
+				<a
+					href="https://3dsplatapp.com/"
+					target="_blank"
+					rel="noopener"
+					onclick={() => trackOutbound('home_section_3dsplatapp', 'https://3dsplatapp.com/')}
+					class="inline-flex items-center gap-2 bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-lg shadow-purple-500/25"
+				>
+					Explore 3D Splat App →
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- Features Grid -->
 <section class="bg-white py-20">
 	<div class="max-w-6xl mx-auto px-6">
@@ -138,6 +185,8 @@
 </section>
 
 <script>
+	import { trackOutbound } from '$lib/analytics';
+
 	const features = [
 		{ icon: '✏️', title: '2D Floor Plan Drawing', desc: 'Draw walls, rooms, doors, and windows with precise measurements. Snap-to-grid and orthogonal drawing modes.' },
 		{ icon: '🧊', title: '3D Visualization', desc: 'Instantly switch to a 3D view of your floor plan. Walk through your design with orbit controls.' },

@@ -1,0 +1,30 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug in Chrome (dev)",
+			"type": "chrome",
+			"request": "launch",
+			"url": "http://localhost:5173",
+			"webRoot": "${workspaceFolder}/src",
+			"preLaunchTask": "dev server",
+			"sourceMaps": true
+		},
+		{
+			"name": "Debug SSR (Node)",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "npm",
+			"runtimeArgs": ["run", "dev"],
+			"console": "integratedTerminal",
+			"skipFiles": ["<node_internals>/**"]
+		}
+	],
+	"compounds": [
+		{
+			"name": "Debug Full Stack (SSR + Chrome)",
+			"configurations": ["Debug SSR (Node)", "Debug in Chrome (dev)"],
+			"stopAll": true
+		}
+	]
+}
