@@ -117,8 +117,10 @@
 				</ul>
 			</div>
 		</div>
-		<div class="border-t border-slate-800 mt-8 pt-8 text-slate-500 text-center">
-			© {new Date().getFullYear()} theLodgeStudio. All rights reserved.
+		<div class="border-t border-slate-800 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-slate-500 text-center">
+			<span>© {new Date().getFullYear()} theLodgeStudio. All rights reserved.</span>
+			<span class="hidden sm:inline text-slate-700">·</span>
+			<a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
 		</div>
 	</div>
 </footer>
