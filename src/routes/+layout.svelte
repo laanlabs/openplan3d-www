@@ -20,6 +20,7 @@
 		<!-- Desktop nav -->
 		<div class="hidden md:flex items-center gap-8">
 			<a href="/features" class="text-slate-300 hover:text-white transition-colors text-sm">Features</a>
+			<a href="/capture" class="text-slate-300 hover:text-white transition-colors text-sm">iPhone App</a>
 			<a href="/about" class="text-slate-300 hover:text-white transition-colors text-sm">About</a>
 			<a
 				href="https://3dsplatapp.com/"
@@ -55,6 +56,7 @@
 	{#if mobileMenuOpen}
 		<div class="md:hidden border-t border-slate-800 px-6 py-4 space-y-3">
 			<a href="/features" class="block text-slate-300 hover:text-white text-sm" onclick={() => mobileMenuOpen = false}>Features</a>
+			<a href="/capture" class="block text-slate-300 hover:text-white text-sm" onclick={() => mobileMenuOpen = false}>iPhone App</a>
 			<a href="/about" class="block text-slate-300 hover:text-white text-sm" onclick={() => mobileMenuOpen = false}>About</a>
 			<a
 				href="https://3dsplatapp.com/"
@@ -91,6 +93,7 @@
 				<h4 class="text-slate-300 font-medium mb-3">Product</h4>
 				<ul class="space-y-2">
 					<li><a href="https://app.openplan3d.com" class="hover:text-white transition-colors">Open Editor</a></li>
+					<li><a href="/capture" class="hover:text-white transition-colors">iPhone App</a></li>
 					<li><a href="/features" class="hover:text-white transition-colors">Features</a></li>
 					<li><a href="/about" class="hover:text-white transition-colors">About</a></li>
 				</ul>

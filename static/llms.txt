@@ -11,6 +11,15 @@
 - Export to PNG, SVG, DXF, PDF, JSON
 - Imperial and metric unit support
 
+## OpenPlan3D Capture (iOS app)
+- Free, open-source iPhone/iPad app for scanning rooms into editable floor plans
+- Uses LiDAR and Apple RoomPlan to detect walls, doors, windows, and furniture automatically
+- Fine-tune walls with live dimensions, view the space in 3D
+- Open a scan directly in the OpenPlan3D web editor, or export to PNG, SVG, DXF, PDF, or USDZ
+- No account required; scans stay on the device
+- Status: coming soon to the App Store
+- Details: https://www.openplan3d.com/capture
+
 ## Key facts
 - Completely free — no premium tier, no paywalls, no signup required
 - Open source: https://github.com/theLodgeBots/open3dFloorplan
@@ -20,4 +29,5 @@
 ## Links
 - Website: https://www.openplan3d.com
 - Editor: https://app.openplan3d.com
+- iPhone app: https://www.openplan3d.com/capture
 - GitHub: https://github.com/theLodgeBots/open3dFloorplan

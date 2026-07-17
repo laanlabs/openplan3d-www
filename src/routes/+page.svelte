@@ -67,6 +67,46 @@
 	</div>
 </section>
 
+<!-- OpenPlan3D Capture (iOS app) -->
+<section class="bg-gradient-to-b from-slate-800 to-slate-900 py-16 border-y border-slate-700">
+	<div class="max-w-6xl mx-auto px-6">
+		<div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+			<div class="order-2 md:order-1 text-center md:text-left">
+				<div class="inline-flex items-center gap-2 bg-blue-500/10 text-blue-300 text-xs font-medium px-3 py-1 rounded-full mb-4 border border-blue-500/20">
+					<svg viewBox="0 0 384 512" class="w-3 h-3 fill-current" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+					New iPhone app — coming soon
+				</div>
+				<h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Scan real rooms with <span class="text-blue-500">OpenPlan3D Capture</span></h2>
+				<p class="text-slate-400 leading-relaxed mb-6">
+					Point your iPhone at a room and get an editable floor plan in seconds. LiDAR and Apple RoomPlan detect walls, doors, windows, and furniture automatically. Fine-tune walls, view in 3D, then open the plan in OpenPlan3D or export to PNG, SVG, DXF, PDF, or USDZ — free, no account, scans stay on your device.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+					<a
+						href="/capture"
+						class="inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-lg shadow-blue-500/25"
+					>
+						Meet OpenPlan3D Capture →
+					</a>
+				</div>
+			</div>
+			<div class="order-1 md:order-2 flex justify-center gap-4">
+				<img
+					src="/capture/appstore-iphone/01-hero.png"
+					alt="OpenPlan3D Capture app showing recent room scans as floor plan thumbnails"
+					class="w-full max-w-[240px] rounded-[1.75rem] shadow-2xl ring-1 ring-white/10"
+					loading="lazy"
+				/>
+				<img
+					src="/capture/appstore-iphone/02-3d.png"
+					alt="OpenPlan3D Capture 3D view of a scanned apartment"
+					class="hidden sm:block w-full max-w-[240px] rounded-[1.75rem] shadow-2xl ring-1 ring-white/10 mt-8"
+					loading="lazy"
+				/>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- Why Free -->
 <section class="bg-slate-900 py-16">
 	<div class="max-w-4xl mx-auto px-6">
@@ -83,8 +123,8 @@
 			</div>
 			<div class="p-6 rounded-xl bg-slate-800 border border-slate-700">
 				<div class="text-3xl mb-3">📱</div>
-				<h3 class="text-white font-semibold mb-1">RoomPlan Import</h3>
-				<p class="text-slate-400 text-sm">Scan rooms with iPhone/iPad LiDAR. Import directly into the editor.</p>
+				<h3 class="text-white font-semibold mb-1">iPhone LiDAR Capture</h3>
+				<p class="text-slate-400 text-sm">Scan rooms with the <a href="/capture" class="text-blue-400 hover:text-blue-300">OpenPlan3D Capture</a> app and edit them here.</p>
 			</div>
 			<div class="p-6 rounded-xl bg-slate-800 border border-slate-700">
 				<div class="text-3xl mb-3">🧊</div>
