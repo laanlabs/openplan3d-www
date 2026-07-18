@@ -67,6 +67,7 @@
 				<a href={EDITOR}>Open Editor</a>
 				<a href="/capture">iPhone App</a>
 				<a href="/features">Features</a>
+				<a href="/alternatives">Alternatives</a>
 				<a href="/#faq">FAQ</a>
 			</div>
 			<div class="footer-col">

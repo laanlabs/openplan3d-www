@@ -14,6 +14,13 @@
 - The full source code is open source on GitHub.
 - Common use cases: real estate listings, remodels and renovations, interior design, moving and furniture planning, landlord and rental documentation, and CAD workflows.
 
+## Free alternative to paid apps
+- OpenPlan3D is a free, open-source alternative to paid floor plan apps including magicplan, RoomSketcher, Floorplanner, Planner 5D, and SketchUp.
+- Unlike those apps, OpenPlan3D has no subscription, no watermarks on exports, and requires no account.
+- It offers free DXF/CAD export and free iPhone LiDAR room scanning (via the OpenPlan3D Capture app), features that competitors typically gate behind paid plans.
+- It is also a free alternative people compare against other floor plan and home design tools, including Cedreo, Coohom, HomeByMe, Homestyler, SmartDraw, Live Home 3D, Chief Architect, Room Planner, Foyr Neo, Sweet Home 3D, Space Designer 3D, Roomstyler, Morpholio Board, and AutoCAD.
+- Comparison details: https://www.openplan3d.com/alternatives
+
 ## OpenPlan3D Capture (iOS app)
 - Free, open-source iPhone/iPad app that scans rooms with LiDAR and Apple RoomPlan to create editable floor plans.
 - Detects walls, doors, windows, and furniture automatically; fine-tune on the phone and view in 3D.

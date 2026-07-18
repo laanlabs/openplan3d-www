@@ -1,5 +1,7 @@
 <script>
 	import { trackOutbound } from '$lib/analytics';
+	import { LAST_REVIEWED, otherAlternatives } from '$lib/competitors';
+	import ComparisonTable from '$lib/ComparisonTable.svelte';
 
 	const GITHUB = 'https://github.com/theLodgeBots/open3dFloorplan';
 	const EDITOR = 'https://app.openplan3d.com';
@@ -20,7 +22,8 @@
 		{ q: 'Can I create a floor plan by scanning a room with my iPhone?', a: 'Yes. The free OpenPlan3D Capture app uses iPhone LiDAR and Apple RoomPlan to turn a one-minute walkthrough into an editable floor plan.' },
 		{ q: 'What formats can I export?', a: 'PNG and PDF for sharing, SVG for vector graphics, DXF for AutoCAD and CAD software, and JSON for re-editing.' },
 		{ q: 'Do I need an account?', a: 'No. The editor runs in your browser and plans stay on your device. No account, login, or cloud required.' },
-		{ q: 'How does OpenPlan3D compare to RoomSketcher or Floorplanner?', a: 'OpenPlan3D covers 2D drawing, 3D visualization, furniture, and export without subscriptions, and is fully open source with native Apple RoomPlan import.' }
+		{ q: 'How does OpenPlan3D compare to RoomSketcher or Floorplanner?', a: 'OpenPlan3D covers 2D drawing, 3D visualization, furniture, and export without subscriptions, and is fully open source with native Apple RoomPlan import.' },
+		{ q: 'Is there a free alternative to magicplan, RoomSketcher, or Floorplanner?', a: 'Yes. OpenPlan3D is a free, open-source alternative to paid floor plan apps like magicplan, RoomSketcher, Floorplanner, Planner 5D, and SketchUp — with no subscription, no watermarks, and no account. It covers 2D drawing, 3D visualization, iPhone LiDAR scanning, and DXF export for free.' }
 	];
 
 	const jsonLd = `<script type="application/ld+json">${JSON.stringify({
@@ -360,6 +363,23 @@
 					<p>{uc.body}</p>
 				</article>
 			{/each}
+		</div>
+	</section>
+
+	<!-- Comparison -->
+	<section id="compare" class="section">
+		<div class="section-head">
+			<div class="eyebrow">How we compare</div>
+			<h2 class="section-h2">Free where the others charge</h2>
+			<p class="lead">Most floor plan apps lock exports, watermarks, and CAD formats behind a subscription. OpenPlan3D gives you all of it for free — a genuine alternative to magicplan, RoomSketcher, Floorplanner, Planner 5D, and SketchUp.</p>
+		</div>
+		<div class="compare-wrap">
+			<ComparisonTable />
+		</div>
+		<div class="compare-foot">
+			<a class="compare-link" href="/alternatives">See the full comparison &amp; alternatives →</a>
+			<p class="compare-more">Also a free alternative to {otherAlternatives.slice(0, 6).join(', ')}, and more.</p>
+			<p class="compare-note">Based on each product's publicly listed features and pricing as of {LAST_REVIEWED}. Competitors' plans change — check their sites for the latest.</p>
 		</div>
 	</section>
 
@@ -1146,6 +1166,34 @@
 		font-size: 15.5px;
 		line-height: 1.6;
 		color: var(--text-body);
+	}
+
+	/* ---- Comparison table ---- */
+	.compare-wrap {
+		margin-top: 40px;
+	}
+	.compare-foot {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	.compare-link {
+		font-size: 15.5px;
+		font-weight: 600;
+		color: var(--indigo);
+	}
+	.compare-more {
+		margin: 0;
+		font-size: 14px;
+		color: var(--text-body);
+		line-height: 1.5;
+	}
+	.compare-note {
+		margin: 0;
+		font-size: 13px;
+		color: var(--text-muted);
+		line-height: 1.5;
 	}
 
 	/* ---- CTA ---- */
