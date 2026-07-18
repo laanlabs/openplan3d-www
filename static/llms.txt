@@ -1,33 +1,34 @@
 # OpenPlan3D
 
-> Free, open-source 2D & 3D floor plan editor that runs in your browser.
+> OpenPlan3D is a free, open-source floor plan software that runs in the browser — an alternative to RoomSketcher, Floorplanner, and SketchUp for 2D floor plans and 3D home design, with no subscription, watermarks, or account.
 
-## What it does
-- Draw floor plans in 2D with walls, doors, windows, and dimensions
-- Visualize designs in real-time 3D
-- Place 140+ furniture models from a built-in library
-- Import Apple RoomPlan scans (iPhone/iPad LiDAR)
-- Import 3D mesh models (GLB/glTF)
-- Export to PNG, SVG, DXF, PDF, JSON
-- Imperial and metric unit support
+## Summary
+- OpenPlan3D is a free, open-source floor plan editor that runs entirely in your web browser.
+- It is 100% free: no premium tier, no watermarks, no paywalls, and no signup or account.
+- You can draw 2D floor plans with walls, rooms, doors, and windows at precise imperial or metric measurements.
+- You can switch to a real-time 3D view and orbit through the design at any time.
+- You can furnish plans with 140+ built-in furniture models or import your own GLB/glTF 3D meshes.
+- You can scan a real room with an iPhone using the free OpenPlan3D Capture app (iPhone LiDAR + Apple RoomPlan) and open the scan directly in the editor.
+- You can export floor plans to PNG and PDF for sharing, SVG for vector graphics, DXF for AutoCAD and other CAD software, and JSON for re-editing.
+- Your plans stay on your device — the editor runs locally in the browser with no cloud requirement.
+- The full source code is open source on GitHub.
+- Common use cases: real estate listings, remodels and renovations, interior design, moving and furniture planning, landlord and rental documentation, and CAD workflows.
 
 ## OpenPlan3D Capture (iOS app)
-- Free, open-source iPhone/iPad app for scanning rooms into editable floor plans
-- Uses LiDAR and Apple RoomPlan to detect walls, doors, windows, and furniture automatically
-- Fine-tune walls with live dimensions, view the space in 3D
-- Open a scan directly in the OpenPlan3D web editor, or export to PNG, SVG, DXF, PDF, or USDZ
-- No account required; scans stay on the device
-- Status: coming soon to the App Store
+- Free, open-source iPhone/iPad app that scans rooms with LiDAR and Apple RoomPlan to create editable floor plans.
+- Detects walls, doors, windows, and furniture automatically; fine-tune on the phone and view in 3D.
+- Open a scan directly in the OpenPlan3D web editor, or export to PNG, SVG, DXF, PDF, or USDZ.
+- No account required; scans stay on the device. Status: coming soon to the App Store.
 - Details: https://www.openplan3d.com/capture
 
-## Key facts
-- Completely free — no premium tier, no paywalls, no signup required
-- Open source: https://github.com/theLodgeBots/open3dFloorplan
-- Web app: https://app.openplan3d.com
-- Built with SvelteKit and Three.js
+## Related tool: 3D Splat App
+- 3D Splat App turns photos and videos into photorealistic 3D scenes with Gaussian Splatting on your Mac — no LiDAR required.
+- From the makers of OpenPlan3D. Useful for capturing a real space before designing its floor plan.
+- Details: https://3dsplatapp.com/
 
 ## Links
 - Website: https://www.openplan3d.com
 - Editor: https://app.openplan3d.com
 - iPhone app: https://www.openplan3d.com/capture
 - GitHub: https://github.com/theLodgeBots/open3dFloorplan
+- 3D Splat App (Gaussian Splatting on Mac): https://3dsplatapp.com/

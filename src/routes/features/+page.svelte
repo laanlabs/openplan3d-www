@@ -4,8 +4,11 @@
 	<meta property="og:title" content="Features | Free 2D/3D Floor Plan Software - OpenPlan3D" />
 	<meta property="og:description" content="Explore OpenPlan3D features: draw walls, place doors & windows, furnish rooms with 140+ 3D models, import Apple RoomPlan scans, switch between 2D & 3D views, export to multiple formats. 100% free." />
 	<meta property="og:url" content="https://www.openplan3d.com/features" />
+	<meta property="og:image" content="https://www.openplan3d.com/screenshots/2d-floorplan.png" />
+	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Features | Free 2D/3D Floor Plan Software - OpenPlan3D" />
 	<meta name="twitter:description" content="Explore OpenPlan3D features: draw walls, place doors & windows, furnish rooms with 140+ 3D models, import Apple RoomPlan scans, switch between 2D & 3D views, export to multiple formats. 100% free." />
+	<meta name="twitter:image" content="https://www.openplan3d.com/screenshots/2d-floorplan.png" />
 	<link rel="canonical" href="https://www.openplan3d.com/features" />
 </svelte:head>
 

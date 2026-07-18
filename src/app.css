@@ -4,5 +4,34 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* OpenPlan3D blueprint brand tokens */
+:root {
+  --navy: #16295e;
+  --navy-accent: #1b3070;
+  --navy-hover: #0f1e49;
+  --indigo: #3a5bd9;
+  --indigo-hover: #2444b8;
+  --indigo-tint: #eceff9;
+  --indigo-light: #7d97e8;
+
+  --text-strong: #16295e;
+  --text-body: #5a5d66;
+  --text-body-dark: #3a3c40;
+  --text-muted: #8a8d99;
+  --text-muted-2: #8e8e93;
+  --on-navy-body: #a8b6e2;
+  --on-navy-eyebrow: #8fa3e0;
+
+  --surface: #ffffff;
+  --surface-alt: #f7f8fc;
+  --canvas: #fdfdff;
+  --border: #e6e8f0;
+  --border-soft: #e8e9ef;
+
+  /* blueprint grid line colors */
+  --grid-light: rgba(58, 91, 217, 0.07);
+  --grid-navy: rgba(255, 255, 255, 0.05);
 }
