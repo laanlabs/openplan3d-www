@@ -3,13 +3,13 @@
 	<meta name="description" content="OpenPlan3D privacy policy. Learn what data we collect (almost none), how we use it, and your rights. No accounts, no selling data, no tracking you across the web." />
 	<meta property="og:title" content="Privacy Policy | OpenPlan3D" />
 	<meta property="og:description" content="OpenPlan3D privacy policy. Learn what data we collect (almost none), how we use it, and your rights." />
-	<meta property="og:url" content="https://www.openplan3d.com/privacy" />
-	<meta property="og:image" content="https://www.openplan3d.com/screenshots/2d-floorplan.png" />
+	<meta property="og:url" content="https://openplan3d.com/privacy" />
+	<meta property="og:image" content="https://openplan3d.com/screenshots/2d-floorplan.png" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Privacy Policy | OpenPlan3D" />
 	<meta name="twitter:description" content="OpenPlan3D privacy policy. Learn what data we collect (almost none), how we use it, and your rights." />
-	<meta name="twitter:image" content="https://www.openplan3d.com/screenshots/2d-floorplan.png" />
-	<link rel="canonical" href="https://www.openplan3d.com/privacy" />
+	<meta name="twitter:image" content="https://openplan3d.com/screenshots/2d-floorplan.png" />
+	<link rel="canonical" href="https://openplan3d.com/privacy" />
 	<meta name="robots" content="index, follow" />
 </svelte:head>
 

@@ -3,13 +3,13 @@
 	<meta name="description" content="OpenPlan3D is a free, open source floor plan editor built by theLodgeStudio. Design homes in 2D and 3D with LiDAR room scanning support. No account required, no paywalls." />
 	<meta property="og:title" content="About OpenPlan3D | Free Open Source Home Design Tool" />
 	<meta property="og:description" content="OpenPlan3D is a free, open source floor plan editor built by theLodgeStudio. Design homes in 2D and 3D with LiDAR room scanning support. No account required, no paywalls." />
-	<meta property="og:url" content="https://www.openplan3d.com/about" />
-	<meta property="og:image" content="https://www.openplan3d.com/screenshots/2d-floorplan.png" />
+	<meta property="og:url" content="https://openplan3d.com/about" />
+	<meta property="og:image" content="https://openplan3d.com/screenshots/2d-floorplan.png" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="About OpenPlan3D | Free Open Source Home Design Tool" />
 	<meta name="twitter:description" content="OpenPlan3D is a free, open source floor plan editor built by theLodgeStudio. Design homes in 2D and 3D with LiDAR room scanning support. No account required, no paywalls." />
-	<meta name="twitter:image" content="https://www.openplan3d.com/screenshots/2d-floorplan.png" />
-	<link rel="canonical" href="https://www.openplan3d.com/about" />
+	<meta name="twitter:image" content="https://openplan3d.com/screenshots/2d-floorplan.png" />
+	<link rel="canonical" href="https://openplan3d.com/about" />
 </svelte:head>
 
 <section class="bg-gradient-to-b from-slate-900 to-slate-800 text-white py-20">

@@ -34,7 +34,7 @@
 				name: 'OpenPlan3D',
 				applicationCategory: 'DesignApplication',
 				operatingSystem: 'Web',
-				url: 'https://www.openplan3d.com/',
+				url: 'https://openplan3d.com/',
 				offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
 				description: 'Free open-source floor plan editor with 2D drawing, 3D visualization, 140+ furniture models, Apple RoomPlan LiDAR import, and PNG/SVG/DXF/PDF export.',
 				featureList: '2D floor plan drawing, 3D visualization, 140+ furniture models, Apple RoomPlan import, GLB/glTF import, DXF export, PDF export',
@@ -69,15 +69,15 @@
 <svelte:head>
 	<title>Free Floor Plan Editor — 2D & 3D, Open Source | OpenPlan3D</title>
 	<meta name="description" content="Free open-source floor plan editor. Draw 2D floor plans, view in 3D, furnish with 140+ models, scan rooms with iPhone LiDAR (Apple RoomPlan), and export PNG, SVG, DXF, PDF. No signup, no paywalls." />
-	<link rel="canonical" href="https://www.openplan3d.com/" />
-	<meta property="og:url" content="https://www.openplan3d.com/" />
+	<link rel="canonical" href="https://openplan3d.com/" />
+	<meta property="og:url" content="https://openplan3d.com/" />
 	<meta property="og:title" content="Free Floor Plan Editor — 2D & 3D, Open Source | OpenPlan3D" />
 	<meta property="og:description" content="Free open-source floor plan editor. Draw in 2D, view in 3D, scan rooms with iPhone LiDAR, and export PNG, SVG, DXF, PDF. No signup, no paywalls." />
-	<meta property="og:image" content="https://www.openplan3d.com/screenshots/2d-floorplan.png" />
+	<meta property="og:image" content="https://openplan3d.com/screenshots/2d-floorplan.png" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Free Floor Plan Editor — 2D & 3D, Open Source | OpenPlan3D" />
 	<meta name="twitter:description" content="Free open-source floor plan editor. Draw in 2D, view in 3D, scan rooms with iPhone LiDAR, and export PNG, SVG, DXF, PDF. No signup, no paywalls." />
-	<meta name="twitter:image" content="https://www.openplan3d.com/screenshots/2d-floorplan.png" />
+	<meta name="twitter:image" content="https://openplan3d.com/screenshots/2d-floorplan.png" />
 	{@html jsonLd}
 </svelte:head>
 

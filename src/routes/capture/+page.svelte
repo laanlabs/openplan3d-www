@@ -4,12 +4,12 @@
 	<meta name="description" content="OpenPlan3D Capture is a free, open-source iPhone app that scans rooms with LiDAR (Apple RoomPlan) and turns them into editable floor plans. Fine-tune walls, view in 3D, and export to PNG, SVG, DXF, PDF, or USDZ — no account, scans stay on your device." />
 	<meta property="og:title" content="OpenPlan3D Capture — Scan Floor Plans with iPhone LiDAR" />
 	<meta property="og:description" content="Free, open-source iPhone app that scans rooms with LiDAR and turns them into editable floor plans. No account — your scans stay on your device." />
-	<meta property="og:url" content="https://www.openplan3d.com/capture" />
-	<meta property="og:image" content="https://www.openplan3d.com/capture/appstore-iphone/01-hero.png" />
+	<meta property="og:url" content="https://openplan3d.com/capture" />
+	<meta property="og:image" content="https://openplan3d.com/capture/appstore-iphone/01-hero.png" />
 	<meta name="twitter:title" content="OpenPlan3D Capture — Scan Floor Plans with iPhone LiDAR" />
 	<meta name="twitter:description" content="Free, open-source iPhone app that scans rooms with LiDAR and turns them into editable floor plans. No account — your scans stay on your device." />
-	<meta name="twitter:image" content="https://www.openplan3d.com/capture/appstore-iphone/01-hero.png" />
-	<link rel="canonical" href="https://www.openplan3d.com/capture" />
+	<meta name="twitter:image" content="https://openplan3d.com/capture/appstore-iphone/01-hero.png" />
+	<link rel="canonical" href="https://openplan3d.com/capture" />
 </svelte:head>
 
 <!-- Hero -->
