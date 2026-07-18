@@ -4,6 +4,18 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- Google Analytics 4 (gtag.js). Page views are sent manually on
+		     SvelteKit navigation (see +layout.svelte), so send_page_view is off. -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SSDH4GMGFP"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-SSDH4GMGFP', { send_page_view: false });
+		</script>
 		<meta name="robots" content="index, follow" />
 		<meta name="keywords" content="free floor plan editor, open source floor plan software, 3D home design tool, 2D floor plan maker, Apple RoomPlan import, LiDAR room scanner, furniture floor plan, export floor plan DXF SVG, online home designer, free house design software, room planner, interior design tool" />
 		<meta property="og:site_name" content="OpenPlan3D" />

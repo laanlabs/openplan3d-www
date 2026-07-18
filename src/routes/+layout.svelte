@@ -1,9 +1,23 @@
 <script>
 	import '../app.css';
 	import { trackOutbound } from '$lib/analytics';
+	import { afterNavigate } from '$app/navigation';
 
 	let { children } = $props();
 	let mobileMenuOpen = $state(false);
+
+	// Send a GA4 page_view on initial load and every client-side navigation.
+	// gtag.js is loaded in app.html with send_page_view disabled so these are
+	// the single source of page views (no double-counting).
+	afterNavigate(() => {
+		const w = /** @type {any} */ (window);
+		if (typeof w.gtag !== 'function') return;
+		w.gtag('event', 'page_view', {
+			page_title: document.title,
+			page_location: w.location.href,
+			page_path: w.location.pathname + w.location.search
+		});
+	});
 
 	const GITHUB = 'https://github.com/theLodgeBots/open3dFloorplan';
 	const EDITOR = 'https://app.openplan3d.com';
@@ -94,7 +108,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 18px 64px;
+		padding: 18px var(--edge);
 		background: rgba(255, 255, 255, 0.92);
 		backdrop-filter: blur(12px);
 		-webkit-backdrop-filter: blur(12px);
@@ -177,7 +191,7 @@
 		display: flex;
 		justify-content: space-between;
 		gap: 48px;
-		padding: 56px 64px 40px;
+		padding: 56px var(--edge) 40px;
 	}
 	.footer-brand {
 		display: flex;
@@ -215,7 +229,7 @@
 		color: var(--indigo);
 	}
 	.footer-legal {
-		padding: 0 64px 32px;
+		padding: 0 var(--edge) 32px;
 		font-size: 13px;
 		color: #a9acb6;
 	}

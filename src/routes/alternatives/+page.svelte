@@ -112,8 +112,6 @@
 
 <style>
 	.page {
-		max-width: 1440px;
-		margin: 0 auto;
 		background: #fff;
 	}
 	/* Hero */
@@ -121,7 +119,7 @@
 		background: var(--navy);
 		background-image: linear-gradient(var(--grid-navy) 1px, transparent 1px), linear-gradient(90deg, var(--grid-navy) 1px, transparent 1px);
 		background-size: 40px 40px;
-		padding: 80px 64px;
+		padding: 80px var(--edge);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -189,7 +187,7 @@
 
 	/* Sections */
 	.section {
-		padding: 80px 64px;
+		padding: 80px var(--edge);
 	}
 	.section-alt {
 		background: var(--surface-alt);
@@ -341,7 +339,7 @@
 		background: var(--navy);
 		background-image: linear-gradient(var(--grid-navy) 1px, transparent 1px), linear-gradient(90deg, var(--grid-navy) 1px, transparent 1px);
 		background-size: 40px 40px;
-		padding: 80px 64px;
+		padding: 80px var(--edge);
 		display: flex;
 		flex-direction: column;
 		align-items: center;

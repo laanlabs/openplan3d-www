@@ -413,8 +413,6 @@
 
 <style>
 	.page {
-		max-width: 1440px;
-		margin: 0 auto;
 		background: #fff;
 	}
 
@@ -502,7 +500,7 @@
 		background: var(--navy);
 		background-image: linear-gradient(var(--grid-navy) 1px, transparent 1px), linear-gradient(90deg, var(--grid-navy) 1px, transparent 1px);
 		background-size: 40px 40px;
-		padding: 88px 64px 0;
+		padding: 88px var(--edge) 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -591,7 +589,7 @@
 	.answer-bar {
 		background: var(--surface-alt);
 		border-bottom: 0.5px solid var(--border-soft);
-		padding: 26px 64px;
+		padding: 26px var(--edge);
 		display: flex;
 		justify-content: center;
 	}
@@ -609,7 +607,7 @@
 
 	/* ---- Sections ---- */
 	.section {
-		padding: 88px 64px;
+		padding: 88px var(--edge);
 	}
 	.section-alt {
 		background: var(--surface-alt);
@@ -1201,7 +1199,7 @@
 		background: var(--navy);
 		background-image: linear-gradient(var(--grid-navy) 1px, transparent 1px), linear-gradient(90deg, var(--grid-navy) 1px, transparent 1px);
 		background-size: 40px 40px;
-		padding: 88px 64px;
+		padding: 88px var(--edge);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
