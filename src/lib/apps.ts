@@ -1,6 +1,8 @@
 // Sibling apps from theLodgeStudio. Single source of truth for cross-promo
 // links so the footer, homepage, and structured data stay in sync.
 
+export const OPENPLAN_APP_STORE = 'https://apps.apple.com/us/app/openplan3d/id6759076170';
+
 export interface SiblingApp {
 	/** Short name used in nav/footer links. */
 	name: string;

@@ -1,7 +1,7 @@
 <script>
 	import '../app.css';
 	import { trackOutbound } from '$lib/analytics';
-	import { SIBLING_APPS } from '$lib/apps';
+	import { OPENPLAN_APP_STORE, SIBLING_APPS } from '$lib/apps';
 	import { afterNavigate } from '$app/navigation';
 
 	let { children } = $props();
@@ -33,7 +33,7 @@
 
 	<div class="nav-links">
 		<a href="/features">Features</a>
-		<a href="/capture">iPhone App</a>
+		<a href={OPENPLAN_APP_STORE} onclick={() => trackOutbound('nav_app_store', OPENPLAN_APP_STORE)}>Get the App</a>
 		<div class="nav-apps">
 			<button class="nav-apps-trigger" aria-haspopup="true">
 				More Apps
@@ -75,6 +75,7 @@
 	<div class="mobile-menu">
 		<a href="/features" onclick={() => (mobileMenuOpen = false)}>Features</a>
 		<a href="/capture" onclick={() => (mobileMenuOpen = false)}>iPhone App</a>
+		<a href={OPENPLAN_APP_STORE} onclick={() => { trackOutbound('mobile_app_store', OPENPLAN_APP_STORE); mobileMenuOpen = false; }}>Download on the App Store</a>
 		<a href="/#faq" onclick={() => (mobileMenuOpen = false)}>FAQ</a>
 		<a href={GITHUB} target="_blank" rel="noopener" onclick={() => (mobileMenuOpen = false)}>GitHub</a>
 		<div class="mobile-apps-h">More Open Apps</div>
@@ -113,6 +114,7 @@
 				<div class="footer-h">Product</div>
 				<a href={EDITOR}>Open Editor</a>
 				<a href="/capture">iPhone App</a>
+				<a href={OPENPLAN_APP_STORE} onclick={() => trackOutbound('footer_app_store', OPENPLAN_APP_STORE)}>Download on the App Store</a>
 				<a href="/features">Features</a>
 				<a href="/alternatives">Alternatives</a>
 				<a href="/#faq">FAQ</a>
