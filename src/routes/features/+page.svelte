@@ -4,11 +4,11 @@
 	<meta property="og:title" content="Features | Free 2D/3D Floor Plan Software - OpenPlan3D" />
 	<meta property="og:description" content="Explore OpenPlan3D features: draw walls, place doors & windows, furnish rooms with 140+ 3D models, import Apple RoomPlan scans, switch between 2D & 3D views, export to multiple formats. 100% free." />
 	<meta property="og:url" content="https://openplan3d.com/features" />
-	<meta property="og:image" content="https://openplan3d.com/screenshots/2d-floorplan.png" />
+	<meta property="og:image" content="https://openplan3d.com/screenshots/og-2d-floorplan.jpg" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Features | Free 2D/3D Floor Plan Software - OpenPlan3D" />
 	<meta name="twitter:description" content="Explore OpenPlan3D features: draw walls, place doors & windows, furnish rooms with 140+ 3D models, import Apple RoomPlan scans, switch between 2D & 3D views, export to multiple formats. 100% free." />
-	<meta name="twitter:image" content="https://openplan3d.com/screenshots/2d-floorplan.png" />
+	<meta name="twitter:image" content="https://openplan3d.com/screenshots/og-2d-floorplan.jpg" />
 	<link rel="canonical" href="https://openplan3d.com/features" />
 </svelte:head>
 
@@ -27,11 +27,11 @@
 	<div class="max-w-6xl mx-auto px-6">
 		<div class="grid md:grid-cols-2 gap-8">
 			<figure class="bg-slate-900 rounded-xl border border-slate-700 overflow-hidden shadow-2xl">
-				<img src="/screenshots/2d-floorplan.png" alt="OpenPlan3D 2D floor plan editor showing a detailed room layout with walls, doors, windows, furniture, and imperial dimension labels" class="w-full" />
+				<img src={imgFloorplan} alt="OpenPlan3D 2D floor plan editor showing a detailed room layout with walls, doors, windows, furniture, and imperial dimension labels" class="w-full" />
 				<figcaption class="text-slate-400 text-sm text-center py-3">2D floor plan with furniture and dimensions</figcaption>
 			</figure>
 			<figure class="bg-slate-900 rounded-xl border border-slate-700 overflow-hidden shadow-2xl">
-				<img src="/screenshots/3d-view.png" alt="OpenPlan3D 3D visualization showing the same floor plan rendered with realistic textures, furniture, and lighting" class="w-full" />
+				<img src={img3dView} alt="OpenPlan3D 3D visualization showing the same floor plan rendered with realistic textures, furniture, and lighting" class="w-full" />
 				<figcaption class="text-slate-400 text-sm text-center py-3">3D rendered view with textures and furniture</figcaption>
 			</figure>
 		</div>
@@ -92,12 +92,14 @@
 </section>
 
 <script>
+	import imgFloorplan from '$lib/assets/2d-floorplan.webp';
+	import img3dView from '$lib/assets/3d-view.webp';
 	const featureGroups = [
 		{
 			icon: '✏️',
 			title: '2D Floor Plan Drawing',
 			desc: 'Draw precise floor plans with an intuitive click-and-drag interface. Create complex multi-room layouts in minutes.',
-			screenshot: '/screenshots/2d-floorplan.png',
+			screenshot: imgFloorplan,
 			screenshotAlt: '2D floor plan drawing interface with walls, rooms, doors, windows, and dimension labels in imperial units',
 			bullets: [
 				'Click to place walls with automatic corner snapping',
@@ -111,7 +113,7 @@
 			icon: '🧊',
 			title: '3D Visualization',
 			desc: 'See your floor plan come to life in a real-time 3D view. Navigate your design with intuitive orbit controls.',
-			screenshot: '/screenshots/3d-view.png',
+			screenshot: img3dView,
 			screenshotAlt: '3D rendered visualization of a floor plan with furniture, textures, and realistic lighting',
 			bullets: [
 				'Instant 2D to 3D conversion',

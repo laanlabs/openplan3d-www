@@ -24,11 +24,11 @@
 	<meta property="og:url" content="https://openplan3d.com/alternatives" />
 	<meta property="og:title" content="Free Alternative to magicplan, RoomSketcher, Floorplanner &amp; SketchUp | OpenPlan3D" />
 	<meta property="og:description" content="A free, open-source floor plan editor with no subscription, no watermarks, and no account. Compare OpenPlan3D to the popular paid apps." />
-	<meta property="og:image" content="https://openplan3d.com/screenshots/2d-floorplan.png" />
+	<meta property="og:image" content="https://openplan3d.com/screenshots/og-2d-floorplan.jpg" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Free Alternative to magicplan, RoomSketcher, Floorplanner &amp; SketchUp" />
 	<meta name="twitter:description" content="A free, open-source floor plan editor with no subscription, no watermarks, and no account." />
-	<meta name="twitter:image" content="https://openplan3d.com/screenshots/2d-floorplan.png" />
+	<meta name="twitter:image" content="https://openplan3d.com/screenshots/og-2d-floorplan.jpg" />
 	{@html jsonLd}
 </svelte:head>
 

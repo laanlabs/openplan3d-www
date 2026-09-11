@@ -44,7 +44,7 @@
 			<!-- Hero screenshot -->
 			<div class="flex justify-center md:justify-end">
 				<img
-					src="/capture/appstore-iphone/01-hero.png"
+					src={imgCap01}
 					alt="OpenPlan3D Capture app home screen showing a Start Scanning button and recent room scans as floor plan thumbnails"
 					class="w-full max-w-[300px] rounded-[2rem] shadow-2xl ring-1 ring-white/10"
 					loading="eager"
@@ -149,13 +149,18 @@
 <script>
 	import { OPENPLAN_APP_STORE } from '$lib/apps';
 	import { trackOutbound } from '$lib/analytics';
+	import imgCap01 from '$lib/assets/capture/01-hero.webp';
+	import imgCap02 from '$lib/assets/capture/02-3d.webp';
+	import imgCap03 from '$lib/assets/capture/03-editor.webp';
+	import imgCap04 from '$lib/assets/capture/04-export.webp';
+	import imgCap05 from '$lib/assets/capture/05-closer.webp';
 
 	const shots = [
-		{ src: '/capture/appstore-iphone/05-closer.png', alt: 'OpenPlan3D Capture welcome screen: Free, open source, no account, with a Start Scanning button' },
-		{ src: '/capture/appstore-iphone/01-hero.png', alt: 'OpenPlan3D Capture home screen with recent room scans shown as floor plan thumbnails' },
-		{ src: '/capture/appstore-iphone/03-editor.png', alt: 'Editing a floor plan in OpenPlan3D Capture — dragging a wall handle with a live 2.10 m dimension label' },
-		{ src: '/capture/appstore-iphone/02-3d.png', alt: 'OpenPlan3D Capture 3D view of a scanned apartment with rooms, walls, and furniture' },
-		{ src: '/capture/appstore-iphone/04-export.png', alt: 'OpenPlan3D Capture export screen offering PNG, SVG, DXF, PDF, and USDZ, plus Open in OpenPlan3D' },
+		{ src: imgCap05, alt: 'OpenPlan3D Capture welcome screen: Free, open source, no account, with a Start Scanning button' },
+		{ src: imgCap01, alt: 'OpenPlan3D Capture home screen with recent room scans shown as floor plan thumbnails' },
+		{ src: imgCap03, alt: 'Editing a floor plan in OpenPlan3D Capture — dragging a wall handle with a live 2.10 m dimension label' },
+		{ src: imgCap02, alt: 'OpenPlan3D Capture 3D view of a scanned apartment with rooms, walls, and furniture' },
+		{ src: imgCap04, alt: 'OpenPlan3D Capture export screen offering PNG, SVG, DXF, PDF, and USDZ, plus Open in OpenPlan3D' },
 	];
 
 	const featureGroups = [
@@ -163,7 +168,7 @@
 			icon: '📱',
 			title: 'LiDAR room capture, powered by RoomPlan',
 			desc: 'Walk around a room with your iPhone and OpenPlan3D Capture builds the plan as you go. Apple RoomPlan detects walls, doors, windows, and furniture automatically — no manual measuring.',
-			screenshot: '/capture/appstore-iphone/01-hero.png',
+			screenshot: imgCap01,
 			screenshotAlt: 'OpenPlan3D Capture home screen showing Start Scanning and recent scans: Living Room, Kitchen, Office',
 			bullets: [
 				'Automatic wall, door, and window detection',
@@ -176,7 +181,7 @@
 			icon: '📐',
 			title: 'Fine-tune every wall',
 			desc: 'Scans are a starting point, not the finish line. Drag wall handles with live dimensions, split walls, and place doors and windows exactly where you want them.',
-			screenshot: '/capture/appstore-iphone/03-editor.png',
+			screenshot: imgCap03,
 			screenshotAlt: 'Wall editing in OpenPlan3D Capture with a highlighted interior wall and a 2.10 m dimension label',
 			bullets: [
 				'Drag handles with live, on-screen dimensions',
@@ -189,7 +194,7 @@
 			icon: '🧊',
 			title: 'See it in 3D, instantly',
 			desc: 'Flip from floor plan to a real-time 3D model of the space. Walls, doors, windows, and furniture appear automatically — rotate to view it from any angle.',
-			screenshot: '/capture/appstore-iphone/02-3d.png',
+			screenshot: imgCap02,
 			screenshotAlt: 'OpenPlan3D Capture 3D view of a sample apartment with labeled living room and bedroom areas',
 			bullets: [
 				'One tap between 2D floor plan and 3D',
@@ -202,7 +207,7 @@
 			icon: '📤',
 			title: 'Open in OpenPlan3D, or export anywhere',
 			desc: 'Send your scan straight to the OpenPlan3D web editor to keep designing, or export a file to use anywhere — no account needed.',
-			screenshot: '/capture/appstore-iphone/04-export.png',
+			screenshot: imgCap04,
 			screenshotAlt: 'Export options in OpenPlan3D Capture: PNG, SVG, DXF, PDF, USDZ, and Open in OpenPlan3D',
 			bullets: [
 				'One-tap handoff to the OpenPlan3D web editor',
@@ -215,7 +220,7 @@
 			icon: '🔒',
 			title: 'Free, open source, and private',
 			desc: 'Everything happens on your phone. There is no account to create and no cloud upload — your scans stay on your device unless you choose to export or share them.',
-			screenshot: '/capture/appstore-iphone/05-closer.png',
+			screenshot: imgCap05,
 			screenshotAlt: 'OpenPlan3D Capture intro screen emphasizing free, open source, and no account',
 			bullets: [
 				'No signup and no paywall — completely free',

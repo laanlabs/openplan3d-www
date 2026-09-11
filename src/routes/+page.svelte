@@ -1,4 +1,7 @@
 <script>
+	import imgFloorplan from '$lib/assets/2d-floorplan.webp';
+	import imgSplatIcon from '$lib/assets/3dsplatapp-icon.webp';
+	import imgSplatThumb from '$lib/assets/splat-video-thumb.webp';
 	import { trackOutbound } from '$lib/analytics';
 	import { LAST_REVIEWED, otherAlternatives } from '$lib/competitors';
 	import { OPENPLAN_APP_STORE, SIBLING_APPS } from '$lib/apps';
@@ -115,11 +118,11 @@
 	<meta property="og:url" content="https://openplan3d.com/" />
 	<meta property="og:title" content="Free Floor Plan Editor — 2D & 3D, Open Source | OpenPlan3D" />
 	<meta property="og:description" content="Free open-source floor plan editor. Draw in 2D, view in 3D, scan rooms with iPhone LiDAR, and export PNG, SVG, DXF, PDF. No signup, no paywalls." />
-	<meta property="og:image" content="https://openplan3d.com/screenshots/2d-floorplan.png" />
+	<meta property="og:image" content="https://openplan3d.com/screenshots/og-2d-floorplan.jpg" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Free Floor Plan Editor — 2D & 3D, Open Source | OpenPlan3D" />
 	<meta name="twitter:description" content="Free open-source floor plan editor. Draw in 2D, view in 3D, scan rooms with iPhone LiDAR, and export PNG, SVG, DXF, PDF. No signup, no paywalls." />
-	<meta name="twitter:image" content="https://openplan3d.com/screenshots/2d-floorplan.png" />
+	<meta name="twitter:image" content="https://openplan3d.com/screenshots/og-2d-floorplan.jpg" />
 	{@html jsonLd}
 </svelte:head>
 
@@ -146,7 +149,7 @@
 				<span class="url-pill">app.openplan3d.com</span>
 			</div>
 			<a href={EDITOR}>
-				<img src="/screenshots/2d-floorplan.png" alt="OpenPlan3D 2D floor plan editor showing wall drawing with live dimensions, doors, windows, and furniture on a blueprint grid" class="browser-img" loading="eager" />
+				<img src={imgFloorplan} alt="OpenPlan3D 2D floor plan editor showing wall drawing with live dimensions, doors, windows, and furniture on a blueprint grid" class="browser-img" loading="eager" />
 			</a>
 		</div>
 	</section>
@@ -369,7 +372,7 @@
 					<span class="mac-title">3D Splat App</span>
 				</div>
 				<a class="mac-media" href={SPLAT_VIDEO} target="_blank" rel="noopener" onclick={() => trackOutbound('splat_video', SPLAT_VIDEO)}>
-					<img src="/splat-video-thumb.jpg" alt="3D Splat App — photorealistic Gaussian Splatting scene captured on Mac" class="mac-thumb" loading="lazy" />
+					<img src={imgSplatThumb} alt="3D Splat App — photorealistic Gaussian Splatting scene captured on Mac" class="mac-thumb" loading="lazy" />
 					<span class="play-btn"><span class="play-tri"></span></span>
 					<span class="watch-chip">Watch: 3D Splat App in action</span>
 				</a>
@@ -377,7 +380,7 @@
 		</div>
 		<div class="col-text">
 			<div class="splat-eyebrow">
-				<img src="/3dsplatapp-icon.png" alt="3D Splat App icon" class="splat-icon" />
+				<img src={imgSplatIcon} alt="3D Splat App icon" class="splat-icon" />
 				<span class="eyebrow">From the makers of OpenPlan3D</span>
 			</div>
 			<h2 class="section-h2">3D Splat App — photos into photorealistic 3D</h2>
