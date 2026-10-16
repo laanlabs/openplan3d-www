@@ -70,9 +70,9 @@
 		</section>
 
 		<section>
-			<h2 class="text-2xl font-bold text-slate-900 mb-4">Our Other Open Apps</h2>
+			<h2 class="text-2xl font-bold text-slate-900 mb-4">Our Other Apps</h2>
 			<p class="text-slate-600 leading-relaxed mb-6">
-				OpenPlan3D is part of a family of free, open-source tools we build on the same principles — no subscription, no account, source on GitHub.
+				OpenPlan3D is part of a family of free tools we build on the same principles — no subscription, no account, and open source wherever we can. OpenKitchen3D, OpenLandscape3D and OpenCatio3D exchange plans with OpenPlan3D directly.
 			</p>
 			<div class="space-y-4">
 				{#each SIBLING_APPS as app}

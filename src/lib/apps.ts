@@ -18,6 +18,33 @@ export interface SiblingApp {
 
 export const SIBLING_APPS: SiblingApp[] = [
 	{
+		name: 'OpenLandscape3D',
+		url: 'https://openlandscape3d.com/',
+		slug: 'openlandscape3d',
+		tagline: 'Gardens that grow in 3D',
+		blurb:
+			'Plan the yard around your house — regional plants, every season, and ten years of growth in 3D. Imports OpenPlan3D plans as the house footprint and opens its gardens in OpenPlan3D.',
+		platform: 'Web'
+	},
+	{
+		name: 'OpenKitchen3D',
+		url: 'https://openkitchen3d.com/',
+		slug: 'openkitchen3d',
+		tagline: 'Kitchen & cabinet planning',
+		blurb:
+			'Plan cabinet runs in 2D, elevation, and real-time 3D with clearance checks and a bill of materials. Opens OpenPlan3D rooms and exports kitchens as OpenPlan3D JSON.',
+		platform: 'Web'
+	},
+	{
+		name: 'OpenCatio3D',
+		url: 'https://opencatio3d.com/',
+		slug: 'opencatio3d',
+		tagline: 'Catio design and build plans in 3D',
+		blurb:
+			'Design a safe, buildable catio around your home in 3D, run safety and welfare checks, and get a materials list, cut list, and PDF. Reads OpenPlan3D house walls and opens its plans in OpenPlan3D.',
+		platform: 'Web'
+	},
+	{
 		name: '3D Splat App',
 		url: 'https://3dsplatapp.com/',
 		slug: '3dsplatapp',

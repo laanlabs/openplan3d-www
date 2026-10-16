@@ -28,7 +28,10 @@
 - No account required; scans stay on the device. Status: coming soon to the App Store.
 - Details: https://openplan3d.com/capture
 
-## Other free, open-source apps from the same makers (theLodgeStudio)
+## Other free apps from the same makers (theLodgeStudio)
+- OpenLandscape3D is a free landscape and garden planner that runs in the browser: draw the site, place regional plants, and preview every season and ten years of growth in 3D. It shares the OpenPlan3D JSON format: import an OpenPlan3D plan and the house walls become the footprint to plant around; "Open in OpenPlan3D" or an exported OpenPlan3D JSON file opens the garden in the OpenPlan3D editor, with plants, fences, patios, and site objects arriving as OpenPlan3D objects. Web planner: https://app.openlandscape3d.com/ Website: https://openlandscape3d.com/
+- OpenKitchen3D is a free kitchen and cabinet planner that runs in the browser: parametric cabinet runs in 2D plan, elevation, and real-time 3D, with clearance checks, a running estimate, and a bill of materials. It opens OpenPlan3D plans (the room walls become the kitchen's walls) and exports OpenPlan3D JSON that opens in the OpenPlan3D editor via Import JSON. Web planner: https://openkitchen3d-cloud.web.app/ Website: https://openkitchen3d.com/
+- OpenCatio3D is a free catio (enclosed cat patio) designer that runs in the browser: fit a catio to a real wall, window, or yard in 3D, run safety and welfare checks, and generate a build package (materials list, cut list, cost range, assembly steps, PDF). Its web planner is open source (MIT) on GitHub. It reads OpenPlan3D plans (the house walls, windows, and doors come across) and "Open in OpenPlan3D" or an exported OpenPlan3D JSON file opens the design in the OpenPlan3D editor, with the catio as a sized object. Web planner: https://app.opencatio3d.com/ Website: https://opencatio3d.com/
 - 3D Splat App turns photos and videos into photorealistic 3D scenes with Gaussian Splatting on your Mac — no LiDAR required. Useful for capturing a real space before designing its floor plan. https://3dsplatapp.com/
 - Open Survey 3D is a free, open-source land surveying app for iPhone and iPad that collects points, boundaries, and areas using built-in GPS or a connected RTK receiver. https://opensurvey3d.com/
 - OpenShape3D is a free, open-source direct-modeling CAD app for iPad and iPhone — sketch, extrude, and fillet exact 3D solids, built on the OpenCASCADE geometry kernel. https://openshape3d.com/
@@ -39,6 +42,9 @@
 - Editor: https://app.openplan3d.com
 - iPhone app: https://openplan3d.com/capture
 - GitHub: https://github.com/theLodgeBots/open3dFloorplan
+- OpenLandscape3D (landscape and garden planning in 3D; its exports open in OpenPlan3D): https://openlandscape3d.com/
+- OpenKitchen3D (kitchen and cabinet planning; its exports open in OpenPlan3D): https://openkitchen3d.com/
+- OpenCatio3D (catio design and build plans in 3D; its exports open in OpenPlan3D): https://opencatio3d.com/
 - 3D Splat App (Gaussian Splatting on Mac): https://3dsplatapp.com/
 - Open Survey 3D (land surveying on iPhone/iPad): https://opensurvey3d.com/
 - OpenShape3D (direct-modeling CAD on iPad/iPhone): https://openshape3d.com/

@@ -30,7 +30,8 @@
 		{ q: 'What formats can I export?', a: 'PNG and PDF for sharing, SVG for vector graphics, DXF for AutoCAD and CAD software, and JSON for re-editing.' },
 		{ q: 'Do I need an account?', a: 'No. The editor runs in your browser and plans stay on your device. No account, login, or cloud required.' },
 		{ q: 'How does OpenPlan3D compare to RoomSketcher or Floorplanner?', a: 'OpenPlan3D covers 2D drawing, 3D visualization, furniture, and export without subscriptions, and is fully open source with native Apple RoomPlan import.' },
-		{ q: 'Is there a free alternative to magicplan, RoomSketcher, or Floorplanner?', a: 'Yes. OpenPlan3D is a free, open-source alternative to paid floor plan apps like magicplan, RoomSketcher, Floorplanner, Planner 5D, and SketchUp — with no subscription, no watermarks, and no account. It covers 2D drawing, 3D visualization, iPhone LiDAR scanning, and DXF export for free.' }
+		{ q: 'Is there a free alternative to magicplan, RoomSketcher, or Floorplanner?', a: 'Yes. OpenPlan3D is a free, open-source alternative to paid floor plan apps like magicplan, RoomSketcher, Floorplanner, Planner 5D, and SketchUp — with no subscription, no watermarks, and no account. It covers 2D drawing, 3D visualization, iPhone LiDAR scanning, and DXF export for free.' },
+		{ q: 'Does OpenPlan3D work with OpenKitchen3D, OpenLandscape3D, and OpenCatio3D?', a: 'Yes. They are free web planners from the same makers that share the OpenPlan3D JSON format. Each exports OpenPlan3D JSON that you open in the OpenPlan3D editor with Import JSON, and OpenLandscape3D and OpenCatio3D can also send a design straight to the editor with "Open in OpenPlan3D". The other way round, an OpenPlan3D plan opens in each of them: its walls become the room for a kitchen, the house footprint for a garden, or the host walls for a catio.' }
 	];
 
 	const jsonLd = `<script type="application/ld+json">${JSON.stringify({
@@ -400,8 +401,8 @@
 	<section id="more-apps" class="section section-alt">
 		<div class="section-head">
 			<div class="eyebrow">From the makers of OpenPlan3D</div>
-			<h2 class="section-h2">More free, open-source apps</h2>
-			<p class="lead">Same idea as OpenPlan3D — capable tools, no subscription, no account, source on GitHub.</p>
+			<h2 class="section-h2">More free apps from the same makers</h2>
+			<p class="lead">Same idea as OpenPlan3D — capable tools, no subscription, no account, and open source wherever we can.</p>
 		</div>
 		<div class="apps-grid">
 			{#each OTHER_APPS as app}
