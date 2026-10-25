@@ -41,3 +41,14 @@ html, body {
   --content-max: 1312px;
   --edge: max(64px, calc((100% - var(--content-max)) / 2));
 }
+
+/* Footer apps bar (src/lib/laanlabs/AppsBar.svelte): map its colours onto this site's palette. */
+.lab-bar,
+.lab-page {
+  --lab-fg: var(--text-strong);
+  --lab-muted: var(--text-muted);
+  --lab-line: var(--border);
+  --lab-tile-bg: var(--surface-alt);
+  --lab-accent: var(--indigo);
+  --lab-card-bg: var(--surface);
+}

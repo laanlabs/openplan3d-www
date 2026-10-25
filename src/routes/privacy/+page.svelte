@@ -36,7 +36,7 @@
 		<section>
 			<h2 class="text-2xl font-bold text-slate-900 mb-4">Who We Are</h2>
 			<p class="text-slate-600 leading-relaxed">
-				This website (<strong>openplan3d.com</strong>) and the OpenPlan3D floor plan editor are operated by theLodgeStudio ("we", "us", or "our"). This policy explains how we handle information when you visit this site and use our tools. If you have questions, contact us at
+				This website (<strong>openplan3d.com</strong>) and the OpenPlan3D floor plan editor are operated by Laan Labs ("we", "us", or "our"). This policy explains how we handle information when you visit this site and use our tools. If you have questions, contact us at
 				<a href="mailto:labs@laan.com" class="text-blue-500 hover:text-blue-600 font-medium">labs@laan.com</a>.
 			</p>
 		</section>

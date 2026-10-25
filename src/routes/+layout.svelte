@@ -2,6 +2,8 @@
 	import '../app.css';
 	import { trackOutbound } from '$lib/analytics';
 	import { OPENPLAN_APP_STORE, SIBLING_APPS } from '$lib/apps';
+	import AppsBar from '$lib/laanlabs/AppsBar.svelte';
+	import { STUDIO } from '$lib/laanlabs/apps';
 	import { afterNavigate } from '$app/navigation';
 
 	let { children } = $props();
@@ -35,12 +37,12 @@
 		<a href="/features">Features</a>
 		<a href={OPENPLAN_APP_STORE} onclick={() => trackOutbound('nav_app_store', OPENPLAN_APP_STORE)}>Get the App</a>
 		<div class="nav-apps">
-			<button class="nav-apps-trigger" aria-haspopup="true">
+			<a class="nav-apps-trigger" href="/apps" aria-haspopup="true">
 				More Apps
 				<svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
 					<path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 				</svg>
-			</button>
+			</a>
 			<div class="nav-apps-menu">
 				{#each SIBLING_APPS as app}
 					<a
@@ -53,6 +55,10 @@
 						<span class="nav-apps-tag">{app.tagline}</span>
 					</a>
 				{/each}
+				<a href="/apps">
+					<span class="nav-apps-name">All apps →</span>
+					<span class="nav-apps-tag">Icons, platforms and details</span>
+				</a>
 			</div>
 		</div>
 		<a href="/#faq">FAQ</a>
@@ -79,6 +85,7 @@
 		<a href="/#faq" onclick={() => (mobileMenuOpen = false)}>FAQ</a>
 		<a href={GITHUB} target="_blank" rel="noopener" onclick={() => (mobileMenuOpen = false)}>GitHub</a>
 		<div class="mobile-apps-h">More Open Apps</div>
+		<a href="/apps" onclick={() => (mobileMenuOpen = false)}>All apps →</a>
 		{#each SIBLING_APPS as app}
 			<a
 				href={app.url}
@@ -125,22 +132,10 @@
 				<a href={`${GITHUB}#contributing`} target="_blank" rel="noopener">Contributing</a>
 				<a href={`${GITHUB}/blob/main/LICENSE`} target="_blank" rel="noopener">License</a>
 			</div>
-			<div class="footer-col">
-				<div class="footer-h">More Open Apps</div>
-				{#each SIBLING_APPS as app}
-					<a
-						href={app.url}
-						target="_blank"
-						rel="noopener"
-						onclick={() => trackOutbound(`footer_${app.slug}`, app.url)}
-					>
-						{app.name} — {app.tagline}
-					</a>
-				{/each}
-			</div>
 		</div>
 	</div>
-	<div class="footer-legal">© {new Date().getFullYear()} theLodgeStudio · <a href="/privacy">Privacy Policy</a></div>
+	<div class="footer-apps"><AppsBar current="openplan3d" /></div>
+	<div class="footer-legal">© {new Date().getFullYear()} <a href={STUDIO.url} target="_blank" rel="noopener">Laan Labs</a> · <a href="/privacy">Privacy Policy</a></div>
 </footer>
 
 <style>
@@ -338,6 +333,10 @@
 	.footer-col a:hover {
 		color: var(--indigo);
 	}
+	.footer-apps {
+		padding: 0 var(--edge);
+		margin-bottom: 28px;
+	}
 	.footer-legal {
 		padding: 0 var(--edge) 32px;
 		font-size: 13px;
@@ -397,6 +396,9 @@
 			flex-direction: column;
 			gap: 32px;
 			padding: 44px 22px 28px;
+		}
+		.footer-apps {
+			padding: 0 22px;
 		}
 		.footer-cols {
 			gap: 40px;

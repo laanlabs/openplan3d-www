@@ -5,14 +5,14 @@
 
 <svelte:head>
 	<title>About OpenPlan3D | Free Open Source Home Design Tool</title>
-	<meta name="description" content="OpenPlan3D is a free, open source floor plan editor built by theLodgeStudio. Design homes in 2D and 3D with LiDAR room scanning support. No account required, no paywalls." />
+	<meta name="description" content="OpenPlan3D is a free, open source floor plan editor built by Laan Labs. Design homes in 2D and 3D with LiDAR room scanning support. No account required, no paywalls." />
 	<meta property="og:title" content="About OpenPlan3D | Free Open Source Home Design Tool" />
-	<meta property="og:description" content="OpenPlan3D is a free, open source floor plan editor built by theLodgeStudio. Design homes in 2D and 3D with LiDAR room scanning support. No account required, no paywalls." />
+	<meta property="og:description" content="OpenPlan3D is a free, open source floor plan editor built by Laan Labs. Design homes in 2D and 3D with LiDAR room scanning support. No account required, no paywalls." />
 	<meta property="og:url" content="https://openplan3d.com/about" />
 	<meta property="og:image" content="https://openplan3d.com/screenshots/og-2d-floorplan.jpg" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="About OpenPlan3D | Free Open Source Home Design Tool" />
-	<meta name="twitter:description" content="OpenPlan3D is a free, open source floor plan editor built by theLodgeStudio. Design homes in 2D and 3D with LiDAR room scanning support. No account required, no paywalls." />
+	<meta name="twitter:description" content="OpenPlan3D is a free, open source floor plan editor built by Laan Labs. Design homes in 2D and 3D with LiDAR room scanning support. No account required, no paywalls." />
 	<meta name="twitter:image" content="https://openplan3d.com/screenshots/og-2d-floorplan.jpg" />
 	<link rel="canonical" href="https://openplan3d.com/about" />
 </svelte:head>
@@ -60,9 +60,9 @@
 		</section>
 
 		<section>
-			<h2 class="text-2xl font-bold text-slate-900 mb-4">Built by theLodgeStudio</h2>
+			<h2 class="text-2xl font-bold text-slate-900 mb-4">Built by Laan Labs</h2>
 			<p class="text-slate-600 leading-relaxed mb-4">
-				theLodgeStudio is a small, independent studio focused on building useful tools for creative people. We believe in open-source software and making powerful tools accessible to everyone.
+				Laan Labs is a small, independent studio focused on building useful tools for creative people. We believe in open-source software and making powerful tools accessible to everyone.
 			</p>
 			<p class="text-slate-600 leading-relaxed">
 				OpenPlan3D is built with modern web technologies — SvelteKit, Three.js, and a lot of care for the details that matter.

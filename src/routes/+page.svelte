@@ -397,7 +397,7 @@
 		</div>
 	</section>
 
-	<!-- Other open apps from theLodgeStudio -->
+	<!-- Other open apps from Laan Labs -->
 	<section id="more-apps" class="section section-alt">
 		<div class="section-head">
 			<div class="eyebrow">From the makers of OpenPlan3D</div>
