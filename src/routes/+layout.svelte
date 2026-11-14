@@ -61,7 +61,7 @@
 				</a>
 			</div>
 		</div>
-		<a href="/#faq">FAQ</a>
+		<a href="/help">Help</a>
 		<a href={GITHUB} target="_blank" rel="noopener">GitHub</a>
 		<a class="btn-navy" href={EDITOR}>Open Editor</a>
 	</div>
@@ -82,6 +82,7 @@
 		<a href="/features" onclick={() => (mobileMenuOpen = false)}>Features</a>
 		<a href="/capture" onclick={() => (mobileMenuOpen = false)}>iPhone App</a>
 		<a href={OPENPLAN_APP_STORE} onclick={() => { trackOutbound('mobile_app_store', OPENPLAN_APP_STORE); mobileMenuOpen = false; }}>Download on the App Store</a>
+		<a href="/help" onclick={() => (mobileMenuOpen = false)}>Help</a>
 		<a href="/#faq" onclick={() => (mobileMenuOpen = false)}>FAQ</a>
 		<a href={GITHUB} target="_blank" rel="noopener" onclick={() => (mobileMenuOpen = false)}>GitHub</a>
 		<div class="mobile-apps-h">More Open Apps</div>
@@ -125,6 +126,7 @@
 				<a href="/features">Features</a>
 				<a href="/alternatives">Alternatives</a>
 				<a href="/#faq">FAQ</a>
+				<a href="/help">Help</a>
 			</div>
 			<div class="footer-col">
 				<div class="footer-h">Open Source</div>
