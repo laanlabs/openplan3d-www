@@ -47,11 +47,11 @@
 				{
 					id: 'combine-scans',
 					q: 'How do I combine scans of different floors into one plan?',
-					a: 'Open the lowest floor’s scan in the web editor, add a floor for each level above it, then import each other scan onto its floor with Import RoomPlan → Add to this plan.',
+					a: 'Open one floor’s scan in the web editor, add a floor above or below it for each other level, then import each other scan onto its floor with Import RoomPlan → Add to this plan.',
 					body: `
 						<ol>
-							<li><strong>Start with the lowest level</strong>, such as the basement. Open its scan in the web editor with <strong>Send to OpenPlan3D</strong> on the iPhone. It becomes the plan's Ground Floor.</li>
-							<li><strong>Add the floors above it.</strong> Click <strong>+</strong> next to the floor name at the top of the editor and choose <strong>Empty floor</strong>, once for each level, from the bottom up. The new floors are named Floor 1, Floor 2 and so on. New floors always go on top, which is why you start with the lowest one.</li>
+							<li><strong>Open one floor's scan</strong>, such as the main level, in the web editor with <strong>Send to OpenPlan3D</strong> on the iPhone. It becomes the plan's Ground Floor.</li>
+							<li><strong>Add the other floors.</strong> Click <strong>+</strong> next to the floor name at the top of the editor. Choose <strong>Empty floor</strong> under <strong>Add Top Floor</strong> for each level above, or under <strong>Add Floor Below</strong> for each level underneath, such as a basement. To give a floor your own name, click the pencil next to the floor name.</li>
 							<li><strong>Export the other scans from the iPhone.</strong> For each other floor's scan, tap <strong>Export</strong> on its review screen, choose <strong>Export Editable Plan (JSON)</strong>, and save or AirDrop the file to your computer.</li>
 							<li><strong>Import each scan onto its floor.</strong> In the editor's Build panel, click <strong>Import RoomPlan</strong> and choose the file. Select <strong>Add to this plan</strong>, pick the floor it belongs on under <strong>Floor</strong>, and click <strong>Import</strong>.</li>
 							<li><strong>Line it up.</strong> The scan arrives selected, so drag or rotate it into place. To see the floor below as a guide while you do, open <strong>Layers</strong> at the bottom of the 2D plan and turn on <strong>Floor Below</strong>.</li>
@@ -65,8 +65,8 @@
 					body: `
 						<p>Click the gear icon at the top of the editor to open <strong>Settings</strong>, then the <strong>Project</strong> tab. Under <strong>Floor elevations</strong>, enter each floor's height above ground in centimetres (1 ft ≈ 30.5 cm). Floors start 300 cm apart.</p>
 						<ul>
-							<li><strong>A basement</strong> can sit at 0 with the floors above it higher, or below ground with a negative value, for example −280.</li>
-							<li><strong>Floors stack in the order they were added</strong>, so keep each floor's elevation higher than the one below it.</li>
+							<li><strong>A basement</strong> added with <strong>Add Floor Below</strong> starts 300 cm under the lowest floor, so at −300 under a ground floor at 0. Change it to your real depth, for example −280.</li>
+							<li><strong>Floors keep their order:</strong> Add Floor Below goes under the lowest floor and Add Top Floor goes above the highest. Keep each floor's elevation higher than the one below it.</li>
 							<li><strong>A good way to measure:</strong> count the steps between two floors and multiply by the step height. That's usually about 18 cm (7 in), so 15 steps is about 270 cm.</li>
 						</ul>`
 				},
@@ -75,11 +75,11 @@
 					q: 'How do I model a split-level house, or an entry between two floors?',
 					a: 'Make the in-between level its own floor, with an elevation between the floors above and below it, then add a stair up and a stair down from it.',
 					body: `
-						<p>Treat each level you can stand on as its own floor. For example, a daylight basement, a front entry halfway up, and an upstairs living area become three floors:</p>
+						<p>Treat each level you can stand on as its own floor, and name each one with the pencil next to the floor name. For example, a daylight basement, a front entry halfway up, and an upstairs living area become three floors:</p>
 						<ul>
-							<li><strong>Ground Floor:</strong> the basement, at elevation 0.</li>
-							<li><strong>Floor 1:</strong> the entry, at about 140 cm, or wherever your steps say.</li>
-							<li><strong>Floor 2:</strong> the upstairs, at about 280 cm.</li>
+							<li><strong>Basement:</strong> at elevation 0.</li>
+							<li><strong>Entry:</strong> at about 140 cm, or wherever your steps say.</li>
+							<li><strong>Upstairs:</strong> at about 280 cm.</li>
 						</ul>
 						<p>A small level like an entry can be just its own walls. On the entry floor, add one stair going <strong>Up</strong> to the living area and one going <strong>Down</strong> to the basement. Each stair automatically reaches the floor it leads to (see the next section).</p>`
 				}
