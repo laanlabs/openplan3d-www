@@ -56,7 +56,25 @@
 							<li><strong>Import each scan onto its floor.</strong> In the editor's Build panel, click <strong>Import RoomPlan</strong> and choose the file. Select <strong>Add to this plan</strong>, pick the floor it belongs on under <strong>Floor</strong>, and click <strong>Import</strong>.</li>
 							<li><strong>Line it up.</strong> The scan arrives selected, so drag or rotate it into place. To see the floor below as a guide while you do, open <strong>Layers</strong> at the bottom of the 2D plan and turn on <strong>Floor Below</strong>.</li>
 							<li><strong>Set each floor's height</strong>, as described in the next answer.</li>
-						</ol>`
+						</ol>
+						<p>If a scan ends up on the wrong floor, <a href="#move-to-floor">move it</a> instead of importing it again.</p>`
+				},
+				{
+					id: 'move-to-floor',
+					q: 'How do I move walls or furniture to another floor?',
+					a: 'Select what you want to move, click the layers button in the toolbar above the selection, and choose Move to and the floor. Everything keeps its position, and walls take their doors and windows with them.',
+					body: `
+						<ol>
+							<li><strong>Select it:</strong> click an item, drag a box around several, or press Ctrl+A (⌘A on a Mac) to select everything on the floor. A scan you just imported is already selected.</li>
+							<li><strong>Move it:</strong> click the layers button in the toolbar above the selection and choose <strong>Move to</strong> the floor you want. The editor switches to that floor with the moved items still selected.</li>
+						</ol>
+						<p>Everything keeps its exact position, so walls stay lined up with the floors above and below:</p>
+						<ul>
+							<li><strong>Walls</strong> take their doors and windows with them.</li>
+							<li><strong>A named room</strong> moves when all of its walls do.</li>
+							<li><strong>Undo</strong> puts everything back in one step.</li>
+						</ul>
+						<p>The button only appears when the plan has more than one floor.</p>`
 				},
 				{
 					id: 'floor-heights',

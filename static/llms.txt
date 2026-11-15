@@ -22,7 +22,7 @@
 - Comparison details: https://openplan3d.com/alternatives
 
 ## Help
-- Multi-floor houses: scan each floor separately on the iPhone, then combine them as floors of one plan in the web editor (Import RoomPlan → Add to this plan, then pick the floor). Set each floor's height under Settings → Project → Floor elevations; negative values place a floor below ground. Split-levels and in-between entries become their own floors.
+- Multi-floor houses: scan each floor separately on the iPhone, then combine them as floors of one plan in the web editor (Import RoomPlan → Add to this plan, then pick the floor). Set each floor's height under Settings → Project → Floor elevations; negative values place a floor below ground. Split-levels and in-between entries become their own floors. Floors can be renamed and added above or below. Move to floor (the layers button above a selection) moves walls, doors, windows, rooms and furniture to another floor, keeping their positions.
 - Stairs: Add Stairs in the Build panel; Straight, L-shaped (with landing), U-shaped (with landing) or spiral. An Up stair climbs to the next floor and a Down stair descends to the floor below, at whatever height those floors are. "Open to floor below" on a room makes a stairwell opening.
 - 3D view: rooms are open at the top like a dollhouse. Top-Down View, Make Walls Transparent, Show All Floors Stacked and Active Floor Only are in the 3D view's toolbar.
 - Details: https://openplan3d.com/help
